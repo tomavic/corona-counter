@@ -1,0 +1,7 @@
+{
+  "name": "corona-counter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
