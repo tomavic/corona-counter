@@ -16,7 +16,7 @@ const Tab1: React.FC = () => {
   const [covidCount, setCovidCount] = useState(0);
 
   const [countryList, setCountryList] = useState({});
-  const [countryCode, setCountryCode] = useState('ID');
+  const [countryCode, setCountryCode] = useState('EG');
 
   const [loadingCovidCount, setloadingCovidCount] = useState(true);
   const [loadingCountryList, setloadingCountryList] = useState(true);
@@ -63,16 +63,10 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>Count/تعداد</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-
 
         <div className="content">
           {
@@ -81,7 +75,7 @@ const Tab1: React.FC = () => {
               <SelectBox countryList={countryList} countryCode={countryCode} handleOnChange={(e: any) => handleOnChange(e)}/>
               {
                 loadingCovidCount ?  <Loading />:
-                (!found) ? <NotFound text="Data tidak ditemukan." /> :
+                (!found) ? <NotFound text="Data not found." /> :
                 <Fragment>
                   <CounterBoxLg confirmed={confirmed} />
                   <CounterBox confirmed={confirmed} recovered={recovered} deaths={deaths} />
@@ -90,8 +84,10 @@ const Tab1: React.FC = () => {
               }
             </Fragment>
           }
+
         </div>
 
+        
       </IonContent>
     </IonPage>
   );

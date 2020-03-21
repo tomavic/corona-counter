@@ -13,7 +13,7 @@ const CounterBox = (props) => {
           {props.recovered.value}
         </div>
         <div className="counter-label text-success">
-          Sembuh
+          Got well/تم شفاؤه
         </div>
         <div className="counter-percentage">
           {percentage(props.recovered.value, props.confirmed.value)}%
@@ -27,7 +27,7 @@ const CounterBox = (props) => {
           {props.deaths.value}
         </div>
         <div className="counter-label text-danger">
-          Meninggal
+          Died/توفى
         </div>
         <div className="counter-percentage">
           {percentage(props.deaths.value, props.confirmed.value)}%

@@ -1,11 +1,11 @@
 import React from 'react';
-import virusImage from '../../Images/virus.png';
+import { IonSpinner } from '@ionic/react';
 
 const Loading = () => {
   return (
     <div className="loading">
-      <img src={virusImage} alt="Loading..." className="rotating"/>
-      <p>Memuat...</p>
+      <IonSpinner name="dots" />
+      <p>Loading...</p>
     </div>
   )
 }

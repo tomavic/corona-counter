@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Scheherazade&display=swap');
-:root {
+/* :root {
   --primary        : #000A12;
   --secondary      : #263238;
   --tertiary       : #182025;
@@ -10,7 +10,7 @@
   --text-success   : #52cc99;
   --text-warning   : #f2b900;
   --text-danger    : #f26353;
-}
+} */
 
 html, body, .container, #root {
   /* height: 100%; */
@@ -60,12 +60,12 @@ body {
 }
 
 .content {
-  margin-top: 72px;
+  /* margin-top: 72px; */
   width: 100%;
   flex: 1;
   box-sizing: border-box;
   background-color: var(--primary);
-  border-radius: 16px 16px 0px 0px;
+  /* border-radius: 16px 16px 0px 0px; */
   padding: 16px 16px 80px 16px ;
 
   display: flex;
@@ -396,7 +396,7 @@ body {
   line-height: 24px;
   margin-bottom: 0px;
 
-  align-self: flex-start;
+  /* align-self: flex-start; */
 }
 
 p > a {

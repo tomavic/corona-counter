@@ -1,3 +1,8 @@
 ion-content ion-toolbar {
-  --background: translucent;
+  /* --background: translucent; */
+  background-color: var(--primary);
+}
+
+.item {
+  width: 100% !important;
 }

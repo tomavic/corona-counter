@@ -47,22 +47,17 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+          <IonTitle>Rank/بيانات</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <div className="content">
           {
             loading ? <Loading /> : 
             <ol className="rank-list">
               {
                 countryRank
-                .filter((data: any, index: any) => (index < showRow || data.countryRegion === 'Indonesia' ))
+                .filter((data: any, index: any) => (index < showRow || data.countryRegion === 'Egypt' ))
                 .map((data, index) => (
                   <ListBox
                     key={index} 
@@ -75,6 +70,7 @@ const Tab2: React.FC = () => {
             </ol>
           }
         </div>
+        
       </IonContent>
     </IonPage>
   );

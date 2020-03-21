@@ -4,15 +4,15 @@ const Disclaimer = (props) => {
 
   const lastUpdateIndo = (date) => {
     const d = new Date(date);
-    const monthIndo = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+    const monthIndo = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     
-    return `${d.getDate()} ${monthIndo[d.getMonth()]} ${d.getFullYear()} pukul ${d.getHours()}.${d.getMinutes()} WIB`;
+    return `${d.getDate()} ${monthIndo[d.getMonth()]} ${d.getFullYear()} o'clock ${d.getHours()}.${d.getMinutes()}`;
   }
 
   return (
     <div className="footer">
       Data per-{lastUpdateIndo(props.lastUpdate)} <br></br>
-      diambil dari <a href="https://github.com/mathdroid/covid-19-api">mathdroid/covid-19-api</a>
+      Check data resources from <a href="https://github.com/mathdroid/covid-19-api">here</a>
     </div>
   )
 }

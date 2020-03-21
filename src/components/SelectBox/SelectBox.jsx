@@ -1,18 +1,33 @@
 import React, { Fragment } from 'react';
+import { IonItem, IonLabel, IonSelect, IonSelectOption } from '@ionic/react';
 
 const SelectBox = (props) => {
+
+  const customActionSheetOptions = {
+    header: 'Countries',
+    subHeader: ''
+  };
+
   return (
     <Fragment>
-      <select className="select-box" name="countryCode" id="countryCode" onChange={e => props.handleOnChange(e.target.value)} value={props.countryCode}>
-        {
-          props.countryList.map((country, index) => 
-            <option value={country.alpha2Code} key={country.alpha2Code}>
-              {country.name}
-            </option>
-          )
-        }
-      </select>
-      <small className="help-text">ketuk untuk mengganti negara</small>
+      <IonItem>
+        <IonLabel>Country</IonLabel>
+        <IonSelect 
+          name="countryCode" 
+          okText="Okay" 
+          cancelText="Dismiss" 
+          interfaceOptions={customActionSheetOptions}
+          interface="action-sheet"
+          onIonChange={e => props.handleOnChange(e.target.value)} value={props.countryCode}>
+          {
+            props.countryList.map((country, index) => 
+              <IonSelectOption value={country.alpha2Code} key={country.alpha2Code}>{country.name}</IonSelectOption>
+            )
+          }
+        </IonSelect>
+      </IonItem>
+
+      {/* <small className="help-text">Tap to change country</small> */}
     </Fragment>
   )
 }

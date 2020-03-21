@@ -7,7 +7,7 @@ const CounterBoxLg = (props) => {
         {props.confirmed.value}
       </div>
       <div className="counter-lg-label text-warning">
-        Terkonfirmasi
+        Confirmed/مؤكد
       </div>
     </div>
   )
