@@ -44,7 +44,7 @@ const Tab4: React.FC = () => {
           </a>
 
           <a href="https://www.facebook.com/egypt.mohp/" rel="noopener noreferrer" target="_blank">
-            <p>The Ministry of Health and Population</p>
+            <p>The Egyptian Ministry of Health and Population</p>
           </a>
 
           <a href="http://3g.dxy.cn/newh5/view/pneumonia" rel="noopener noreferrer" target="_blank">

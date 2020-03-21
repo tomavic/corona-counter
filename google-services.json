@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "77381317808",
+    "firebase_url": "https://corona-counter-bfba8.firebaseio.com",
+    "project_id": "corona-counter-bfba8",
+    "storage_bucket": "corona-counter-bfba8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77381317808:android:b57eeeca8e9bfdedfab775",
+        "android_client_info": {
+          "package_name": "com.corona.counter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77381317808-bq19qavhlr93m0bjfa5uta7hhke10p1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-rPSiCU_opEmZWOIyVysE99KP_Qnj3PM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77381317808-bq19qavhlr93m0bjfa5uta7hhke10p1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "corona-counter",
+  "appId": "com.corona.counter",
+  "appName": "Corona Counter",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

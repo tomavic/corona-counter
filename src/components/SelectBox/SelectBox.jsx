@@ -11,7 +11,7 @@ const SelectBox = (props) => {
   return (
     <Fragment>
       <IonItem>
-        <IonLabel>Country</IonLabel>
+        <IonLabel>Select Country</IonLabel>
         <IonSelect 
           name="countryCode" 
           okText="Okay" 
