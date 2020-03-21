@@ -17,7 +17,7 @@ const ListBox = (props) => {
         <div className="rank-content">
           <div className="country-name">
             {props.data.countryRegion.split(', ').reverse().join(' ')} {' '}
-            <span className="province-state-name">{props.toggleProvinceState(props.data.provinceState, props.data.countryRegion)}</span>
+            {/* <span className="province-state-name">{props.toggleProvinceState(props.data.provinceState, props.data.countryRegion)}</span> */}
           </div>
 
           <div className="case-summary">

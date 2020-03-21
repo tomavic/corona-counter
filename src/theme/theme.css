@@ -256,7 +256,8 @@ body {
 
 .country-name {
   font-size: 16px;
-  margin-bottom: 4px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .province-state-name {
@@ -268,8 +269,13 @@ body {
   font-size: 10px;
 }
 
+.case-summary img {
+  width: 14px;
+}
+
 .case-summary-text {
   margin-right: 8px;
+  font-size: 14px;
 }
 
 .icon {
